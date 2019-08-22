@@ -27,8 +27,8 @@ class PlayerHand extends Component {
   state = {
     trailDeck,
     supplyDeck,
-    playerTrailHand: [],
-    playerSupplyHand: [],
+    trailHand: [],
+    supplyHand: [],
     clicked: [],
   };
 
@@ -73,9 +73,9 @@ class PlayerHand extends Component {
 
   handleDealDeck = () => {
     const newTrailDeck = this.state.trailDeck;
-    const newTrailHand = this.state.playerTrailHand;
+    const newTrailHand = this.state.trailHand;
     const newSupplyDeck = this.state.supplyDeck;
-    const newSupplyHand = this.state.playerSupplyHand;
+    const newSupplyHand = this.state.supplyHand;
 
     while (newTrailHand.length < 5) {
       // Deal 5 Trail cards to Player Hand
@@ -102,9 +102,9 @@ class PlayerHand extends Component {
     // update the state variables accordingly
     this.setState({
       trailDeck: newTrailDeck,
-      playerTrailHand : newTrailHand,
+      trailHand : newTrailHand,
       supplyDeck: newSupplyDeck,
-      playerSupplyHand : newSupplyHand,
+      supplyHand : newSupplyHand,
     });
   };  
 
@@ -113,7 +113,7 @@ class PlayerHand extends Component {
         <Container>
         <button onClick={this.handleDealDeck}>Start Game</button>
           <Row>
-            {this.state.playerTrailHand.map(trailCard => (
+            {this.state.trailHand.map(trailCard => (
               <Column size="md-1 sm-6">
                 <TrailCard
                   key={trailCard.id}
@@ -125,7 +125,7 @@ class PlayerHand extends Component {
             ))}
           </Row>
           <Row>
-            {this.state.playerSupplyHand.map(supplyCard => (
+            {this.state.supplyHand.map(supplyCard => (
               <Column size="md-1 sm-6">
                 <TrailCard
                   key={supplyCard.id}
