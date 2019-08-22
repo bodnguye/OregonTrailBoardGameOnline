@@ -4,7 +4,7 @@ import TrailCard from "../../components/TrailCard";
 import Container from "../../components/Container";
 import Row from "../../components/Row";
 import Column from "../../components/Column";
-import trailDeck from "../../decks/trail_deck";
+import trailDeck from "../../decks/supply_deck";
 
 // Random shuffle
 function randomFriends(array) {
@@ -19,7 +19,7 @@ function randomFriends(array) {
 shuffle(trailDeck);
 console.log(trailDeck);
 
-class PlayerTrailHand extends Component {
+class PlayerSupplyHand extends Component {
   // Set this.state
   state = {
     trailDeck,
@@ -70,7 +70,7 @@ class PlayerTrailHand extends Component {
     return (
         <Container>
           <Row>
-            {this.state.trailDeck.slice(0,5).map(trailCard => (
+            {this.state.trailDeck.slice(0,7).map(trailCard => (
               <Column size="md-1 sm-6">
                 <TrailCard
                   key={trailCard.id}
@@ -86,4 +86,4 @@ class PlayerTrailHand extends Component {
   }
 }
 
-export default PlayerTrailHand;
+export default PlayerSupplyHand;
