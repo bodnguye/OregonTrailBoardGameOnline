@@ -1,0 +1,132 @@
+[
+    {
+      "id": 1,
+      "image": "./oregon_cards/supply_deck/100bullets.png",
+      "clicked": false
+    },
+    {
+      "id": 2,
+      "image": "./oregon_cards/supply_deck/100bullets.png",
+      "clicked": false
+    },
+    {
+      "id": 3,
+      "image": "./oregon_cards/supply_deck/200lbs_food.png",
+      "clicked": false
+    },
+    {
+      "id": 4,
+      "image": "./oregon_cards/supply_deck/200lbs_food.png",
+      "clicked": false
+    },
+    {
+      "id": 5,
+      "image": "./oregon_cards/supply_deck/200lbs_food.png",
+      "clicked": false
+    },
+    {
+      "id": 6,
+      "image": "./oregon_cards/supply_deck/clean_water.png",
+      "clicked": false
+    },
+    {
+      "id": 7,
+      "image": "./oregon_cards/supply_deck/clean_water.png",
+      "clicked": false
+    },
+    {
+      "id": 8,
+      "image": "./oregon_cards/supply_deck/clean_water.png",
+      "clicked": false
+    },
+    {
+      "id": 9,
+      "image": "./oregon_cards/supply_deck/clean_water.png",
+      "clicked": false
+    },
+    {
+      "id": 10,
+      "image": "./oregon_cards/supply_deck/clean_water.png",
+      "clicked": false
+    },
+    {
+      "id": 11,
+      "image": "./oregon_cards/supply_deck/clothes.png",
+      "clicked": false
+    },
+    {
+      "id": 12,
+      "image": "./oregon_cards/supply_deck/clothes.png",
+      "clicked": false
+    },
+    {
+      "id": 13,
+      "image": "./oregon_cards/supply_deck/clothes.png",
+      "clicked": false
+    },
+    {
+      "id": 14,
+      "image": "./oregon_cards/supply_deck/medicine.png",
+      "clicked": false
+    },
+    {
+      "id": 15,
+      "image": "./oregon_cards/supply_deck/medicine.png",
+      "clicked": false
+    },
+    {
+      "id": 16,
+      "image": "./oregon_cards/supply_deck/medicine.png",
+      "clicked": false
+    },
+    {
+      "id": 17,
+      "image": "./oregon_cards/supply_deck/medicine.png",
+      "clicked": false
+    },
+    {
+      "id": 18,
+      "image": "./oregon_cards/supply_deck/medicine.png",
+      "clicked": false
+    },
+    {
+      "id": 19,
+      "image": "./oregon_cards/supply_deck/medicine.png",
+      "clicked": false
+    },
+    {
+      "id": 20,
+      "image": "./oregon_cards/supply_deck/oxen.png",
+      "clicked": false
+    },
+    {
+      "id": 21,
+      "image": "./oregon_cards/supply_deck/oxen.png",
+      "clicked": false
+    },
+    {
+      "id": 22,
+      "image": "./oregon_cards/supply_deck/oxen.png",
+      "clicked": false
+    },
+    {
+      "id": 23,
+      "image": "./oregon_cards/supply_deck/spare_parts.png",
+      "clicked": false
+    },
+    {
+      "id": 24,
+      "image": "./oregon_cards/supply_deck/spare_parts.png",
+      "clicked": false
+    },
+    {
+      "id": 25,
+      "image": "./oregon_cards/supply_deck/spare_parts.png",
+      "clicked": false
+    },
+    {
+      "id": 26,
+      "image": "./oregon_cards/supply_deck/spare_parts.png",
+      "clicked": false
+    }
+  ]

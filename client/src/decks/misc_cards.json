@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "image": "./oregon_cards/misc_cards/start_card.png",
+      "clicked": false
+    },
+    {
+      "id": 2,
+      "image": "./oregon_cards/misc_cards/finish_card.png",
+      "clicked": false
+    },
+    {
+      "id": 3,
+      "image": "./oregon_cards/misc_cards/trail_card.png",
+      "clicked": false
+    },
+    {
+      "id": 4,
+      "image": "./oregon_cards/misc_cards/supply_card.png",
+      "clicked": false
+    },
+    {
+      "id": 5,
+      "image": "./oregon_cards/misc_cards/calamity_card.png",
+      "clicked": false
+    }
+  ]

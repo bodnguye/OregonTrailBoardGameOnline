@@ -1,0 +1,165 @@
+[
+  {
+    "id": 1,
+    "image": "./oregon_cards/calamity_deck/bad_water.png",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "image": "./oregon_cards/calamity_deck/bad_water.png",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "image": "./oregon_cards/calamity_deck/broken_arm.png",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "image": "./oregon_cards/calamity_deck/broken_arm.png",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "image": "./oregon_cards/calamity_deck/broken_axle.png",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "image": "./oregon_cards/calamity_deck/broken_axle.png",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "image": "./oregon_cards/calamity_deck/broken_tounge.png",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "image": "./oregon_cards/calamity_deck/broken_tounge.png",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "image": "./oregon_cards/calamity_deck/broken_wheel.png",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "image": "./oregon_cards/calamity_deck/broken_wheel.png",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "image": "./oregon_cards/calamity_deck/cholera.png",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "image": "./oregon_cards/calamity_deck/cholera.png",
+    "clicked": false
+  },
+  {
+    "id": 13,
+    "image": "./oregon_cards/calamity_deck/dead_oxen.png",
+    "clicked": false
+  },
+  {
+    "id": 14,
+    "image": "./oregon_cards/calamity_deck/dead_oxen.png",
+    "clicked": false
+  },
+  {
+    "id": 15,
+    "image": "./oregon_cards/calamity_deck/dysentery.png",
+    "clicked": false
+  },
+  {
+    "id": 16,
+    "image": "./oregon_cards/calamity_deck/dysentery.png",
+    "clicked": false
+  },
+  {
+    "id": 17,
+    "image": "./oregon_cards/calamity_deck/extreme_cold.png",
+    "clicked": false
+  },
+  {
+    "id": 18,
+    "image": "./oregon_cards/calamity_deck/extreme_cold.png",
+    "clicked": false
+  },
+  {
+    "id": 19,
+    "image": "./oregon_cards/calamity_deck/food.png",
+    "clicked": false
+  },
+  {
+    "id": 20,
+    "image": "./oregon_cards/calamity_deck/food.png",
+    "clicked": false
+  },
+  {
+    "id": 21,
+    "image": "./oregon_cards/calamity_deck/inadequate_grass.png",
+    "clicked": false
+  },
+  {
+    "id": 22,
+    "image": "./oregon_cards/calamity_deck/inadequate_grass.png",
+    "clicked": false
+  },
+  {
+    "id": 23,
+    "image": "./oregon_cards/calamity_deck/measles.png",
+    "clicked": false
+  },
+  {
+    "id": 24,
+    "image": "./oregon_cards/calamity_deck/measles.png",
+    "clicked": false
+  },
+  {
+    "id": 25,
+    "image": "./oregon_cards/calamity_deck/snake_bite.png",
+    "clicked": false
+  },
+  {
+    "id": 26,
+    "image": "./oregon_cards/calamity_deck/snake_bite.png",
+    "clicked": false
+  },
+  {
+    "id": 27,
+    "image": "./oregon_cards/calamity_deck/starvation.png",
+    "clicked": false
+  },
+  {
+    "id": 28,
+    "image": "./oregon_cards/calamity_deck/starvation.png",
+    "clicked": false
+  },
+  {
+    "id": 29,
+    "image": "./oregon_cards/calamity_deck/thief.png",
+    "clicked": false
+  },
+  {
+    "id": 30,
+    "image": "./oregon_cards/calamity_deck/thief.png",
+    "clicked": false
+  },
+  {
+    "id": 31,
+    "image": "./oregon_cards/calamity_deck/typhoid.png",
+    "clicked": false
+  },
+  {
+    "id": 32,
+    "image": "./oregon_cards/calamity_deck/typhoid.png",
+    "clicked": false
+  }
+]
+
+
+
