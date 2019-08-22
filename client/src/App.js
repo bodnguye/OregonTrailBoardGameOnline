@@ -1,14 +1,12 @@
 import React from "react";
 import TicTacToe from "./containers/TicTacToe";
-import PlayerTrailHand from "./containers/PlayerTrailHand";
-import PlayerSupplyHand from "./containers/PlayerSupplyHand";
+import PlayerHand from "./containers/PlayerHand";
 
 function App() {
   return (
     <div>
         {/* <TicTacToe /> */}
-        <PlayerTrailHand />
-        <PlayerSupplyHand />
+        <PlayerHand />
     </div>     
   );
 }

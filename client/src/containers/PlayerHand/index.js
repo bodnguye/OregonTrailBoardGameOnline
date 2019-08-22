@@ -5,6 +5,7 @@ import Container from "../../components/Container";
 import Row from "../../components/Row";
 import Column from "../../components/Column";
 import trailDeck from "../../decks/trail_deck";
+import supplyDeck from "../../decks/supply_deck";
 
 // Random shuffle
 function randomFriends(array) {
@@ -16,14 +17,18 @@ function randomFriends(array) {
 };
 
 // Shuffles Trails Deck at the Beginning of he Game
-shuffle(trailDeck);
+shuffle(trailDeck); 
+shuffle(supplyDeck);
 console.log(trailDeck);
+console.log(supplyDeck);
 
-class PlayerTrailHand extends Component {
+class PlayerHand extends Component {
   // Set this.state
   state = {
     trailDeck,
+    supplyDeck,
     playerTrailHand: [],
+    playerSupplyHand: [],
     clicked: [],
   };
 
@@ -66,11 +71,49 @@ class PlayerTrailHand extends Component {
     this.setState({ trailDeck: shuffledFriends });
   };
 
+  handleDealDeck = () => {
+    const newTrailDeck = this.state.trailDeck;
+    const newTrailHand = this.state.playerTrailHand;
+    const newSupplyDeck = this.state.supplyDeck;
+    const newSupplyHand = this.state.playerSupplyHand;
+
+    while (newTrailHand.length < 5) {
+      // Deal 5 Trail cards to Player Hand
+      newTrailHand.push(newTrailDeck.pop());
+      }
+
+    // Removes 5 Trail cards from top of the Deck
+    newTrailDeck.splice(0,5);
+
+      console.log(newTrailDeck);
+      console.log(newTrailHand);
+
+    while (newSupplyHand.length < 7) {
+      // Deal 7 Supply cards to Player Hand
+      newSupplyHand.push(newSupplyDeck.pop());
+      }
+
+    // Removes 7 Supply cards from top of the Deck
+    newSupplyDeck.splice(0,7);
+
+    console.log(newSupplyDeck);
+    console.log(newSupplyHand);
+
+    // update the state variables accordingly
+    this.setState({
+      trailDeck: newTrailDeck,
+      playerTrailHand : newTrailHand,
+      supplyDeck: newSupplyDeck,
+      playerSupplyHand : newSupplyHand,
+    });
+  };  
+
   render() {
     return (
         <Container>
+        <button onClick={this.handleDealDeck}>Start Game</button>
           <Row>
-            {this.state.trailDeck.slice(0,5).map(trailCard => (
+            {this.state.playerTrailHand.map(trailCard => (
               <Column size="md-1 sm-6">
                 <TrailCard
                   key={trailCard.id}
@@ -81,9 +124,21 @@ class PlayerTrailHand extends Component {
               </Column>
             ))}
           </Row>
+          <Row>
+            {this.state.playerSupplyHand.map(supplyCard => (
+              <Column size="md-1 sm-6">
+                <TrailCard
+                  key={supplyCard.id}
+                  handleClick={this.handleClick}
+                  id={supplyCard.id}
+                  image={supplyCard.image}
+                />
+              </Column>
+            ))}
+          </Row>
         </Container>
     );
   }
 }
 
-export default PlayerTrailHand;
+export default PlayerHand;
