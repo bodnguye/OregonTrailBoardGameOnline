@@ -33,12 +33,15 @@ class PlayerHand extends Component {
   };
 
   handleClick = id => {
-    if (this.state.clicked.indexOf(id) === -1) {
-      this.handleIncrement();
-      this.setState({ clicked: this.state.clicked.concat(id) });
-    } else {
-      this.handleReset();
+    if (id) {
+      alert("TESTING");
     }
+    // if (this.state.clicked.indexOf(id) === -1) {
+    //   this.handleIncrement();
+    //   this.setState({ clicked: this.state.clicked.concat(id) });
+    // } else {
+    //   this.handleReset();
+    // }
   };
 
   handleIncrement = () => {
@@ -88,13 +91,13 @@ class PlayerHand extends Component {
       console.log(newTrailDeck);
       console.log(newTrailHand);
 
-    while (newSupplyHand.length < 7) {
-      // Deal 7 Supply cards to Player Hand
+    while (newSupplyHand.length < 8) {
+      // Deal 8 Supply cards to Player Hand
       newSupplyHand.push(newSupplyDeck.pop());
       }
 
-    // Removes 7 Supply cards from top of the Deck
-    newSupplyDeck.splice(0,7);
+    // Removes 8 Supply cards from top of the Deck
+    newSupplyDeck.splice(0,8);
 
     console.log(newSupplyDeck);
     console.log(newSupplyHand);
