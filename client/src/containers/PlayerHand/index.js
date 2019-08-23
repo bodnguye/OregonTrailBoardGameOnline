@@ -1,29 +1,26 @@
 import React, { Component } from "react";
-
 import TrailCard from "../../components/TrailCard";
-import Container from "../../components/Container";
-import Row from "../../components/Row";
-import Column from "../../components/Column";
+import { Col, Row, Container } from "../../components/Grid";
 import {connect} from "react-redux";
 import { dealDeck } from "../../actions/deckActions";
-import trailDeck from "../../decks/trail_deck"
-import supplyDeck from "../../decks/supply_deck"
-import shuffle from "shuffle-array"
+import trailDeck from "../../decks/trail_deck";
+import supplyDeck from "../../decks/supply_deck";
+import calamityDeck from "../../decks/calamity_deck";
+import miscCards from "../../decks/misc_cards";
+import shuffle from "shuffle-array";
+import './style.css';
 
-// Shuffles Trails Deck at the Beginning of he Game
+// Shuffles Trails Deck at the Beginning of the Game
 shuffle(trailDeck); 
 shuffle(supplyDeck);
+shuffle(calamityDeck);
 console.log(trailDeck);
 console.log(supplyDeck);
+console.log(calamityDeck);
+console.log(miscCards);
 
-// Random shuffle
-function randomFriends(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-};
+const trailHand = [];
+const supplyHand = [];
 
 class PlayerHand extends Component {
 
@@ -34,33 +31,40 @@ class PlayerHand extends Component {
   };
 
   render() {
+   
+
     return (
         <Container>
-        <button onClick={() => this.props.dealDeck(trailDeck, supplyDeck)}>Start Game</button>
+        <button onClick={() => this.props.dealDeck(trailDeck, supplyDeck, calamityDeck , miscCards, trailHand, supplyHand)}>Start Game</button>
+         <div className="hand">
           <Row>
             {this.props.deck.trailHand.map(trailCard => (
-              <Column size="md-1 sm-6">
-                <TrailCard
+              <Col size="md-1 sm-6">
+                <TrailCard 
                   key={trailCard.id}
                   handleClick={this.handleClick}
                   id={trailCard.id}
                   image={trailCard.image}
                 />
-              </Column>
+              </Col>
             ))}
           </Row>
+          </div>
+
+          <div className="hand">
           <Row>
             {this.props.deck.supplyHand.map(supplyCard => (
-              <Column size="md-1 sm-6">
+              <Col size="md-1 sm-6">
                 <TrailCard
                   key={supplyCard.id}
                   handleClick={this.handleClick}
                   id={supplyCard.id}
                   image={supplyCard.image}
                 />
-              </Column>
+              </Col>
             ))}
           </Row>
+          </div>
         </Container>
     );
   }
@@ -74,8 +78,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        dealDeck: (trailDeck, supplyDeck) => {
-            dispatch(dealDeck(trailDeck, supplyDeck));
+        dealDeck: (trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand) => {
+            dispatch(dealDeck(trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand));
         }
     };
 };

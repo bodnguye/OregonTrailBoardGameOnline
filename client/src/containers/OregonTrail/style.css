@@ -1,0 +1,76 @@
+/* start and end card */
+.startend-card {
+  border: 4px /*rgb(99, 99, 99)*/ solid;
+  border-radius: 2px;
+  width: 17%;
+  height: 140px;
+  /* margin: 1rem; */
+  position: relative;
+  /* float: right; */
+  box-shadow: 4px 4px 10px rgb(3, 141, 15);
+  transition: all .2s ease-in-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 40%; */
+}
+
+.startend-card > .startend-img-container {
+  height: 100%;
+  overflow: hidden;
+  background:#ffffff;
+}
+
+/* .startend-card:hover {
+    box-shadow: 8px 8px 20px rgb(55, 255, 5);
+    transform: scale(1.4);
+    cursor: pointer;
+  } */
+
+.startend-card > .startend-img-container > img {
+  height: 100%;
+}
+
+
+  /**************/
+ /* trail card */
+/**************/
+
+.trail-card:active {
+  transform: translate(1px, 1px);
+}
+
+.trail-card {
+    border: 4px /*rgb(99, 99, 99)*/ solid;
+    border-radius: 2px;
+    width: 180px;
+    height: 130px;
+    margin: 1rem;
+    /* position: relative;
+    float: left; */
+    box-shadow: 4px 4px 10px rgb(3, 141, 15);
+    transition: all .2s ease-in-out;
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%; 
+  }
+  
+  .trail-card > .trail-img-container {
+    height: 100%;
+    background:#ffffff;
+  }
+  
+  .trail-card > .trail-img-container > img {
+    height: 100%;
+  }
+  
+  .trail-card:active {
+    transform: translate(1px, 1px);
+  }
+
+.oregontrail {
+    background-image:    url(/images/the-oregon-trail6gif.jpeg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}

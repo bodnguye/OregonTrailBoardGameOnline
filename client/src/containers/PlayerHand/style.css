@@ -1,0 +1,11 @@
+.hand {
+    background-color: green;
+    border: 1px solid;
+    width: 100%;
+  }
+
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background-color: aqua;
+  }

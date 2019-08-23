@@ -1,9 +1,11 @@
-export const dealDeck = (trailDeck, supplyDeck) => {
+export const dealDeck = (trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand) => {
     const newTrailDeck = trailDeck;
-    const newTrailHand = [];
     const newSupplyDeck = supplyDeck;
-    const newSupplyHand = [];
-
+    const newCalamityDeck = calamityDeck;
+    const newTrailHand = trailHand;
+    const newSupplyHand = supplyHand;
+    const newMiscCards = miscCards;
+    
     while (newTrailHand.length < 5) {
       // Deal 5 Trail cards to Player Hand
       newTrailHand.push(newTrailDeck.pop());
@@ -33,5 +35,7 @@ export const dealDeck = (trailDeck, supplyDeck) => {
         trailHand : newTrailHand,
         supplyDeck: newSupplyDeck,
         supplyHand : newSupplyHand,
+        calamityDeck: newCalamityDeck,
+        miscCards: newMiscCards
     }
   };  

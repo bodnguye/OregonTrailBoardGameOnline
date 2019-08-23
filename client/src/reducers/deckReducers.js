@@ -5,6 +5,8 @@ const deckReducer = (state = {
     supplyDeck: [],
     trailHand: [],
     supplyHand: [],
+    calamityDeck: [],
+    miscCards: [],
     clicked: [],
 }, action) => {
     switch (action.type) {
@@ -17,7 +19,7 @@ const deckReducer = (state = {
                 supplyHand: action.supplyHand
             }
             break;
-        case "SET_AGE":
+        case "CLICK":
             state = {
                 ...state,
                 age: action.payload

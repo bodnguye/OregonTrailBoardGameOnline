@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const FriendCard = props => (
+const TrailCard = props => (
   <div 
     className="card" 
     value={props.id} 
@@ -13,4 +13,4 @@ const FriendCard = props => (
   </div>
 );
 
-export default FriendCard;
+export default TrailCard;
