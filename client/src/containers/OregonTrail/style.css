@@ -1,4 +1,7 @@
-/* start and end card */
+  /**********************/
+ /* start and end card */
+/**********************/
+
 .startend-card {
   border: 4px /*rgb(99, 99, 99)*/ solid;
   border-radius: 2px;
@@ -70,7 +73,7 @@
 
 .oregontrail {
     background-image:    url(/images/the-oregon-trail6gif.jpeg);
-    background-size:     cover;                      /* <------ */
+    background-size:     cover;                      
     background-repeat:   no-repeat;
-    background-position: center center;              /* optional, center the image */
+    background-position: center center;             
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TrailCard from "../../components/TrailCard";
 import { Col, Row, Container } from "../../components/Grid";
-import {connect} from "react-redux";
+import { connect } from "react-redux";
 import { dealDeck } from "../../actions/deckActions";
 import trailDeck from "../../decks/trail_deck";
 import supplyDeck from "../../decks/supply_deck";
@@ -11,13 +11,9 @@ import shuffle from "shuffle-array";
 import './style.css';
 
 // Shuffles Trails Deck at the Beginning of the Game
-shuffle(trailDeck); 
+shuffle(trailDeck);
 shuffle(supplyDeck);
 shuffle(calamityDeck);
-console.log(trailDeck);
-console.log(supplyDeck);
-console.log(calamityDeck);
-console.log(miscCards);
 
 const trailHand = [];
 const supplyHand = [];
@@ -31,16 +27,14 @@ class PlayerHand extends Component {
   };
 
   render() {
-   
-
     return (
-        <Container>
-        <button onClick={() => this.props.dealDeck(trailDeck, supplyDeck, calamityDeck , miscCards, trailHand, supplyHand)}>Start Game</button>
-         <div className="hand">
+      <Container>
+        <button onClick={() => this.props.dealDeck(trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand)}>Start Game</button>
+        <div className="hand">
           <Row>
             {this.props.deck.trailHand.map(trailCard => (
               <Col size="md-1 sm-6">
-                <TrailCard 
+                <TrailCard
                   key={trailCard.id}
                   handleClick={this.handleClick}
                   id={trailCard.id}
@@ -49,9 +43,9 @@ class PlayerHand extends Component {
               </Col>
             ))}
           </Row>
-          </div>
+        </div>
 
-          <div className="hand">
+        <div className="hand">
           <Row>
             {this.props.deck.supplyHand.map(supplyCard => (
               <Col size="md-1 sm-6">
@@ -64,24 +58,24 @@ class PlayerHand extends Component {
               </Col>
             ))}
           </Row>
-          </div>
-        </Container>
+        </div>
+      </Container>
     );
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-      deck: state.deck,
+    deck: state.deck,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
-    return {
-        dealDeck: (trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand) => {
-            dispatch(dealDeck(trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand));
-        }
-    };
+  return {
+    dealDeck: (trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand) => {
+      dispatch(dealDeck(trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand));
+    }
+  };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(PlayerHand);

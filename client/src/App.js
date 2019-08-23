@@ -6,9 +6,9 @@ import OregonnTrail from "./containers/OregonTrail"
 function App() {
   return (
     <div>
-        {/* <TicTacToe /> */}
         <OregonnTrail />
         <PlayerHand />
+        <TicTacToe />
     </div>     
   );
 }

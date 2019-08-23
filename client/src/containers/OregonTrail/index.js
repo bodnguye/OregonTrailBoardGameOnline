@@ -32,37 +32,37 @@ class OregonTrail extends Component {
     render() {
         return (
             <div className="oregontrail">
-            <Container>
-                <Row >
-                    <Col size="med-12 sm-12">
-                        <StartEnd
-                            key={miscCards[0].id}
-                            value={miscCards[0].id}
-                            image={miscCards[0].image}
-                        />
-                    </Col>
-                </Row>
-                <Row >
-                    {behindtrail.map(trail => (
-                        <Col size="md-2 sm-6">
-                            <Trails
-                                key={trail.id}
-                                id={trail.id}
-                                image={trail.image}
+                <Container>
+                    <Row >
+                        <Col size="med-12 sm-12">
+                            <StartEnd
+                                key={miscCards[0].id}
+                                value={miscCards[0].id}
+                                image={miscCards[0].image}
                             />
                         </Col>
-                    ))}
-                </Row>
-                <Row>
-                    <Col size="med-12 sm-12">
-                        <StartEnd
-                            key={miscCards[1].id}
-                            value={miscCards[1].id}
-                            image={miscCards[1].image}
-                        />
-                    </Col>
-                </Row>
-            </Container>
+                    </Row>
+                    <Row >
+                        {behindtrail.map(trail => (
+                            <Col size="md-2 sm-6">
+                                <Trails
+                                    key={trail.id}
+                                    id={trail.id}
+                                    image={trail.image}
+                                />
+                            </Col>
+                        ))}
+                    </Row>
+                    <Row>
+                        <Col size="med-12 sm-12">
+                            <StartEnd
+                                key={miscCards[1].id}
+                                value={miscCards[1].id}
+                                image={miscCards[1].image}
+                            />
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         );
     }
