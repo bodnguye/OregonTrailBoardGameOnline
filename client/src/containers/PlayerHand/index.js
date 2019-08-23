@@ -1,11 +1,20 @@
 import React, { Component } from "react";
-import shuffle from 'shuffle-array';
+
 import TrailCard from "../../components/TrailCard";
 import Container from "../../components/Container";
 import Row from "../../components/Row";
 import Column from "../../components/Column";
-import trailDeck from "../../decks/trail_deck";
-import supplyDeck from "../../decks/supply_deck";
+import {connect} from "react-redux";
+import { dealDeck } from "../../actions/deckActions";
+import trailDeck from "../../decks/trail_deck"
+import supplyDeck from "../../decks/supply_deck"
+import shuffle from "shuffle-array"
+
+// Shuffles Trails Deck at the Beginning of he Game
+shuffle(trailDeck); 
+shuffle(supplyDeck);
+console.log(trailDeck);
+console.log(supplyDeck);
 
 // Random shuffle
 function randomFriends(array) {
@@ -16,107 +25,20 @@ function randomFriends(array) {
   return array;
 };
 
-// Shuffles Trails Deck at the Beginning of he Game
-shuffle(trailDeck); 
-shuffle(supplyDeck);
-console.log(trailDeck);
-console.log(supplyDeck);
-
 class PlayerHand extends Component {
-  // Set this.state
-  state = {
-    trailDeck,
-    supplyDeck,
-    trailHand: [],
-    supplyHand: [],
-    clicked: [],
-  };
 
   handleClick = id => {
     if (id) {
       alert("TESTING");
     }
-    // if (this.state.clicked.indexOf(id) === -1) {
-    //   this.handleIncrement();
-    //   this.setState({ clicked: this.state.clicked.concat(id) });
-    // } else {
-    //   this.handleReset();
-    // }
   };
-
-  handleIncrement = () => {
-    const newScore = this.state.currentScore + 1;
-    this.setState({
-      currentScore: newScore,
-      correctIncorrect: "You guessed correctly!"
-    });
-    if (newScore >= this.state.topScore) {
-      this.setState({ topScore: newScore });
-    }
-    else if (newScore === 12) {
-      this.setState({ correctIncorrect: "You win!" });
-    }
-    this.handleShuffle();
-  };
-
-  handleReset = () => {
-    this.setState({
-      currentScore: 0,
-      topScore: this.state.topScore,
-      correctIncorrect: "You guessed incorrectly!",
-      clicked: []
-    });
-    this.handleShuffle();
-  };
-
-  handleShuffle = () => {
-    let shuffledFriends = randomFriends(trailDeck);
-    this.setState({ trailDeck: shuffledFriends });
-  };
-
-  handleDealDeck = () => {
-    const newTrailDeck = this.state.trailDeck;
-    const newTrailHand = this.state.trailHand;
-    const newSupplyDeck = this.state.supplyDeck;
-    const newSupplyHand = this.state.supplyHand;
-
-    while (newTrailHand.length < 5) {
-      // Deal 5 Trail cards to Player Hand
-      newTrailHand.push(newTrailDeck.pop());
-      }
-
-    // Removes 5 Trail cards from top of the Deck
-    newTrailDeck.splice(0,5);
-
-      console.log(newTrailDeck);
-      console.log(newTrailHand);
-
-    while (newSupplyHand.length < 8) {
-      // Deal 8 Supply cards to Player Hand
-      newSupplyHand.push(newSupplyDeck.pop());
-      }
-
-    // Removes 8 Supply cards from top of the Deck
-    newSupplyDeck.splice(0,8);
-
-    console.log(newSupplyDeck);
-    console.log(newSupplyHand);
-
-    // update the state variables accordingly
-    this.setState({
-      trailDeck: newTrailDeck,
-      trailHand : newTrailHand,
-      supplyDeck: newSupplyDeck,
-      supplyHand : newSupplyHand,
-    });
-  };  
 
   render() {
     return (
         <Container>
-        <button onClick={this.handleDealDeck}>Start Game</button>
+        <button onClick={() => this.props.dealDeck(trailDeck, supplyDeck)}>Start Game</button>
           <Row>
-            {this.state.trailHand.map(trailCard => (
+            {this.props.deck.trailHand.map(trailCard => (
               <Column size="md-1 sm-6">
                 <TrailCard
                   key={trailCard.id}
@@ -128,7 +50,7 @@ class PlayerHand extends Component {
             ))}
           </Row>
           <Row>
-            {this.state.supplyHand.map(supplyCard => (
+            {this.props.deck.supplyHand.map(supplyCard => (
               <Column size="md-1 sm-6">
                 <TrailCard
                   key={supplyCard.id}
@@ -144,4 +66,18 @@ class PlayerHand extends Component {
   }
 }
 
-export default PlayerHand;
+const mapStateToProps = (state) => {
+  return {
+      deck: state.deck,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        dealDeck: (trailDeck, supplyDeck) => {
+            dispatch(dealDeck(trailDeck, supplyDeck));
+        }
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(PlayerHand);
