@@ -1,5 +1,7 @@
 import miscCards from "../decks/misc_cards"
+import calamityDeck from "../decks/calamity_deck"
  const initialActive= [miscCards[2],miscCards[2],miscCards[2],miscCards[2],miscCards[2]];
+ const drawCalamity = calamityDeck[0];
 
 export const dealDeck = (trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand) => {
     
@@ -32,6 +34,7 @@ export const dealDeck = (trailDeck, supplyDeck, calamityDeck, miscCards, trailHa
         miscCards: miscCards,
     }
   };  
+ 
 
 export const trailClick = (id, trailHand, activeTrail) => {
     
@@ -52,7 +55,9 @@ export const trailClick = (id, trailHand, activeTrail) => {
     return{
       type: "TRAIL_CLICK",
       trailHand : newTrailHand,
-      activeTrail: initialActive
+      activeTrail: initialActive,
     }
     }
   };
+
+ 

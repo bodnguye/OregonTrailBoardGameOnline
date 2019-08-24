@@ -1,5 +1,6 @@
 /* eslint-disable default-case */
 import miscCards from "../decks/misc_cards"
+import calamityDeck from "../decks/calamity_deck"
 
 const deckReducer = (state = {
     trailDeck: [],
@@ -8,7 +9,8 @@ const deckReducer = (state = {
     supplyHand: [],
     calamityDeck: [],
     miscCards: [],
-    activeTrail: [miscCards[2], miscCards[2], miscCards[2], miscCards[2], miscCards[2]]
+    activeTrail: [miscCards[2], miscCards[2], miscCards[2], miscCards[2], miscCards[2]],
+    activeCalamity: [calamityDeck[0]]
 }, action) => {
     switch (action.type) {
         case "DEAL_DECK":
@@ -24,9 +26,14 @@ const deckReducer = (state = {
             state = {
                 ...state,
                 activeTrail: action.activeTrail,
-                trailHand: action.trailHand
+                trailHand: action.trailHand,
             };
             break;
+        case "DRAW_CALAMITY":
+        state = {
+            ...state,
+            activeCalamity: action.activeCalamity
+        };
     }
     return state;
 };

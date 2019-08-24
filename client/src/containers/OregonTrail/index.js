@@ -2,13 +2,8 @@ import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { connect } from "react-redux";
 
-import { dealDeck } from "../../actions/deckActions";
-
 import miscCards from "../../decks/misc_cards";
-import calamityDeck from "../../decks/calamity_deck";
 import "./style.css";
-
-const activeCalamity = [miscCards[4]];
 
 const Start = props => (
     <div
@@ -118,7 +113,7 @@ class OregonTrail extends Component {
                             />
                         </Col>
 
-                        {activeCalamity.map(calamity => (
+                        {this.props.deck.activeCalamity.map(calamity => (
                         <Col size="med-1 sm-2">
                             <ActiveCalamity
                                 key={calamity.id}
