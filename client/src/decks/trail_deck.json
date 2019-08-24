@@ -2,225 +2,489 @@
     {
       "id": 1,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card1.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card1.png",
+      "top": "left",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card1.png",
+      "flippedTop": "right",
+      "flippedBottom": "left",
+      "calamity": true
     },
     {
       "id": 2,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card1.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card1.png",
+      "top": "left",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card1.png",
+      "flippedTop": "right",
+      "flippedBottom": "left",
+      "calamity": true
     },
     {
       "id": 3,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card1.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card1.png",
+      "top": "left",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card1.png",
+      "flippedTop": "right",
+      "flippedBottom": "left",
+      "calamity": true
     },
     {
       "id": 4,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card1.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card1.png",
+      "top": "left",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card1.png",
+      "flippedTop": "right",
+      "flippedBottom": "left",
+      "calamity": true
     },
     {
       "id": 5,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card2.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card2.png",
+      "top": "middle",
+      "bottom": "middle",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card2.png",
+      "flippedTop": "middle",
+      "flippedBottom": "middle",
+      "calamity": true
     },
     {
       "id": 6,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card2.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card2.png",
+      "top": "middle",
+      "bottom": "middle",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card2.png",
+      "flippedTop": "middle",
+      "flippedBottom": "middle",
+      "calamity": true
     },
     {
       "id": 7,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card2.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card2.png",
+      "top": "middle",
+      "bottom": "middle",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card2.png",
+      "flippedTop": "middle",
+      "flippedBottom": "middle",
+      "calamity": true
     },
     {
       "id": 8,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card3.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card3.png",
+      "top": "right",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card3.png",
+      "flippedTop": "right",
+      "flippedBottom": "right",
+      "calamity": true
     },
     {
       "id": 9,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card3.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card3.png",
+      "top": "right",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card3.png",
+      "flippedTop": "right",
+      "flippedBottom": "right",
+      "calamity": true
     },
     {
       "id": 10,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card3.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card3.png",
+      "top": "right",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card3.png",
+      "flippedTop": "right",
+      "flippedBottom": "right",
+      "calamity": true
     },
     {
       "id": 11,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card3.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card3.png",
+      "top": "right",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card3.png",
+      "flippedTop": "right",
+      "flippedBottom": "right",
+      "calamity": true
     },
     {
       "id": 12,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card3.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card3.png",
+      "top": "right",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card3.png",
+      "flippedTop": "right",
+      "flippedBottom": "right",
+      "calamity": true
     },
     {
       "id": 13,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card4.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card4.png",
+      "top": "right",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card4.png",
+      "flippedTop": "left",
+      "flippedBottom": "right",
+      "calamity": true
     },
     {
       "id": 14,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card4.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card4.png",
+      "top": "right",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card4.png",
+      "flippedTop": "left",
+      "flippedBottom": "right",
+      "calamity": true
     },
     {
       "id": 15,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card4.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card4.png",
+      "top": "right",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card4.png",
+      "flippedTop": "left",
+      "flippedBottom": "right",
+      "calamity": true
     },
     {
       "id": 16,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card4.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card4.png",
+      "top": "right",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card4.png",
+      "flippedTop": "left",
+      "flippedBottom": "right",
+      "calamity": true
     },
     {
       "id": 17,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card5.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card5.png",
+      "top": "middle",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card5.png",
+      "flippedTop": "right",
+      "flippedBottom": "middle",
+      "calamity": true
     },
     {
       "id": 18,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card5.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card5.png",
+      "top": "middle",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card5.png",
+      "flippedTop": "right",
+      "flippedBottom": "middle",
+      "calamity": true
     },
     {
       "id": 19,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card5.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card5.png",
+      "top": "middle",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card5.png",
+      "flippedTop": "right",
+      "flippedBottom": "middle",
+      "calamity": true
     },
     {
       "id": 20,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card5.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card5.png",
+      "top": "middle",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card5.png",
+      "flippedTop": "right",
+      "flippedBottom": "middle",
+      "calamity": true
     },
     {
       "id": 21,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card6.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card6.png",
+      "top": "middle",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card6.png",
+      "flippedTop": "left",
+      "flippedBottom": "middle",
+      "calamity": true
     },
     {
       "id": 22,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card6.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card6.png",
+      "top": "middle",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card6.png",
+      "flippedTop": "left",
+      "flippedBottom": "middle",
+      "calamity": true
     },
     {
       "id": 23,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card6.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card6.png",
+      "top": "middle",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card6.png",
+      "flippedTop": "left",
+      "flippedBottom": "middle",
+      "calamity": true
     },
     {
       "id": 24,
       "image": "./oregon_cards/trail_deck/calamity_trails/calamity_card6.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/calamity_trails/active/calamity_card6.png",
+      "top": "middle",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/calamity_trails/flipped_active/calamity_card6.png",
+      "flippedTop": "left",
+      "flippedBottom": "middle",
+      "calamity": true
     },
+
+
+
     {
       "id": 25,
       "image": "./oregon_cards/trail_deck/river_trails/river_card1.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card1.png",
+      "top": "middle",
+      "bottom": "middle",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card1.png",
+      "flippedTop": "middle",
+      "flippedBottom": "middle",
+      "river": true
     },
-
-
-
     {
       "id": 26,
       "image": "./oregon_cards/trail_deck/river_trails/river_card1.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card1.png",
+      "top": "middle",
+      "bottom": "middle",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card1.png",
+      "flippedTop": "middle",
+      "flippedBottom": "middle",
+      "river": true
     },
     {
       "id": 27,
       "image": "./oregon_cards/trail_deck/river_trails/river_card1.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card1.png",
+      "top": "middle",
+      "bottom": "middle",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card1.png",
+      "flippedTop": "middle",
+      "flippedBottom": "middle",
+      "river": true
     },
     {
       "id": 28,
       "image": "./oregon_cards/trail_deck/river_trails/river_card1.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card1.png",
+      "top": "middle",
+      "bottom": "middle",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card1.png",
+      "flippedTop": "middle",
+      "flippedBottom": "middle",
+      "river": true
     },
     {
       "id": 29,
       "image": "./oregon_cards/trail_deck/river_trails/river_card2.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card2.png",
+      "top": "middle",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card2.png",
+      "flippedTop": "left",
+      "flippedBottom": "middle",
+      "river": true
     },
     {
       "id": 30,
       "image": "./oregon_cards/trail_deck/river_trails/river_card2.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card2.png",
+      "top": "middle",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card2.png",
+      "flippedTop": "left",
+      "flippedBottom": "middle",
+      "river": true
     },
     {
       "id": 31,
       "image": "./oregon_cards/trail_deck/river_trails/river_card2.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card2.png",
+      "top": "middle",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card2.png",
+      "flippedTop": "left",
+      "flippedBottom": "middle",
+      "river": true
     },
     {
       "id": 32,
       "image": "./oregon_cards/trail_deck/river_trails/river_card3.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card3.png",
+      "top": "right",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card3.png",
+      "flippedTop": "right",
+      "flippedBottom": "right",
+      "river": true
     },
     {
       "id": 33,
       "image": "./oregon_cards/trail_deck/river_trails/river_card3.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card3.png",
+      "top": "right",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card3.png",
+      "flippedTop": "right",
+      "flippedBottom": "right",
+      "river": true
     },
     {
       "id": 34,
       "image": "./oregon_cards/trail_deck/river_trails/river_card3.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card3.png",
+      "top": "right",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card3.png",
+      "flippedTop": "right",
+      "flippedBottom": "right",
+      "river": true
     },
     {
       "id": 35,
       "image": "./oregon_cards/trail_deck/river_trails/river_card3.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card3.png",
+      "top": "right",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card3.png",
+      "flippedTop": "right",
+      "flippedBottom": "right",
+      "river": true
     },
     {
       "id": 36,
       "image": "./oregon_cards/trail_deck/river_trails/river_card4.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card4.png",
+      "top": "right",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card4.png",
+      "flippedTop": "left",
+      "flippedBottom": "right",
+      "river": true
     },
     {
       "id": 37,
       "image": "./oregon_cards/trail_deck/river_trails/river_card4.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card4.png",
+      "top": "right",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card4.png",
+      "flippedTop": "left",
+      "flippedBottom": "right",
+      "river": true
     },
     {
       "id": 38,
       "image": "./oregon_cards/trail_deck/river_trails/river_card4.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card4.png",
+      "top": "right",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card4.png",
+      "flippedTop": "left",
+      "flippedBottom": "right",
+      "river": true
     },
     {
       "id": 39,
       "image": "./oregon_cards/trail_deck/river_trails/river_card5.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card5.png",
+      "top": "middle",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card5.png",
+      "flippedTop": "right",
+      "flippedBottom": "middle",
+      "river": true
     },
     {
       "id": 40,
       "image": "./oregon_cards/trail_deck/river_trails/river_card5.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card5.png",
+      "top": "middle",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card5.png",
+      "flippedTop": "right",
+      "flippedBottom": "middle",
+      "river": true
     },
     {
       "id": 41,
       "image": "./oregon_cards/trail_deck/river_trails/river_card5.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card5.png",
+      "top": "middle",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card5.png",
+      "flippedTop": "right",
+      "flippedBottom": "middle",
+      "river": true
     },
     {
       "id": 42,
       "image": "./oregon_cards/trail_deck/river_trails/river_card6.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card6.png",
+      "top": "left",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card6.png",
+      "flippedTop": "right",
+      "flippedBottom": "left",
+      "riverOfDeath": true
     },
     {
       "id": 43,
       "image": "./oregon_cards/trail_deck/river_trails/river_card6.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card6.png",
+      "top": "left",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card6.png",
+      "flippedTop": "right",
+      "flippedBottom": "left",
+      "riverOfDeath": true
     },
     {
       "id": 44,
       "image": "./oregon_cards/trail_deck/river_trails/river_card6.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/river_trails/active/river_card6.png",
+      "top": "left",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/river_trails/flipped_active/river_card6.png",
+      "flippedTop": "right",
+      "flippedBottom": "left",
+      "riverOfDeath": true
     },
 
 
@@ -228,61 +492,117 @@
     {
       "id": 45,
       "image": "./oregon_cards/trail_deck/safe_trails/safe_card1.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/safe_card1.png",
+      "top": "left",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/safe_card1.png",
+      "flippedTop": "right",
+      "flippedBottom": "left",
+      "safe": true
     },
     {
       "id": 46,
       "image": "./oregon_cards/trail_deck/safe_trails/safe_card2.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/safe_card2.png",
+      "top": "middle",
+      "bottom": "middle",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/safe_card2.png",
+      "flippedTop": "middle",
+      "flippedBottom": "middle",
+      "safe": true
     },
     {
       "id": 47,
       "image": "./oregon_cards/trail_deck/safe_trails/safe_card2.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/safe_card2.png",
+      "top": "middle",
+      "bottom": "middle",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/safe_card2.png",
+      "flippedTop": "middle",
+      "flippedBottom": "middle",
+      "safe": true
     },
     {
       "id": 48,
       "image": "./oregon_cards/trail_deck/safe_trails/safe_card2.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/safe_card2.png",
+      "top": "middle",
+      "bottom": "middle",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/safe_card2.png",
+      "flippedTop": "middle",
+      "flippedBottom": "middle",
+      "safe": true
     },
     {
       "id": 49,
       "image": "./oregon_cards/trail_deck/safe_trails/safe_card3.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/safe_card3.png",
+      "top": "right",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/safe_card3.png",
+      "flippedTop": "left",
+      "flippedBottom": "right",
+      "safe": true
     },
     {
       "id": 50,
       "image": "./oregon_cards/trail_deck/safe_trails/safe_card4.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/safe_card4.png",
+      "top": "middle",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/safe_card4.png",
+      "flippedTop": "right",
+      "flippedBottom": "middle",
+      "safe": true
     },
     {
       "id": 51,
       "image": "./oregon_cards/trail_deck/safe_trails/safe_card5.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/safe_card5.png",
+      "top": "right",
+      "bottom": "right",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/safe_card5.png",
+      "flippedTop": "right",
+      "flippedBottom": "right",
+      "safe": true
     },
     {
       "id": 52,
       "image": "./oregon_cards/trail_deck/safe_trails/safe_card6.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/safe_card6.png",
+      "top": "middle",
+      "bottom": "left",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/safe_card6.png",
+      "flippedTop": "left",
+      "flippedBottom": "middle",
+      "safe": true
     },
     {
       "id": 53,
       "image": "./oregon_cards/trail_deck/safe_trails/town_card.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/town_card.png",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/town_card.png",
+      "town": true
     },
     {
       "id": 54,
       "image": "./oregon_cards/trail_deck/safe_trails/town_card.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/town_card.png",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/town_card.png",
+      "town": true
     },
     {
       "id": 55,
       "image": "./oregon_cards/trail_deck/safe_trails/fort_card.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/fort_card.png",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/fort_card.png",
+      "fort": true
     },
     {
       "id": 56,
       "image": "./oregon_cards/trail_deck/safe_trails/fort_card.png",
-      "clicked": false
+      "active": "./oregon_cards/trail_deck/safe_trails/active/fort_card.png",
+      "flipped": "./oregon_cards/trail_deck/safe_trails/flipped_active/fort_card.png",
+      "fort": true
     }
   ]

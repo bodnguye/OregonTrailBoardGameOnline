@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import TrailCard from "../../components/TrailCard";
 import { Col, Row, Container } from "../../components/Grid";
 import { connect } from "react-redux";
+
 import { dealDeck } from "../../actions/deckActions";
+import { trailClick } from "../../actions/deckActions";
+
 import trailDeck from "../../decks/trail_deck";
 import supplyDeck from "../../decks/supply_deck";
 import calamityDeck from "../../decks/calamity_deck";
@@ -17,15 +20,10 @@ shuffle(calamityDeck);
 
 const trailHand = [];
 const supplyHand = [];
+const activeTrail = [];
 
 class PlayerHand extends Component {
-
-  handleClick = id => {
-    if (id) {
-      alert("TESTING");
-    }
-  };
-
+  
   render() {
     return (
       <Container>
@@ -36,7 +34,7 @@ class PlayerHand extends Component {
               <Col size="md-1 sm-6">
                 <TrailCard
                   key={trailCard.id}
-                  handleClick={this.handleClick}
+                  handleClick={(id) => this.props.trailClick(id, trailHand, activeTrail)}
                   id={trailCard.id}
                   image={trailCard.image}
                 />
@@ -74,6 +72,10 @@ const mapDispatchToProps = (dispatch) => {
   return {
     dealDeck: (trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand) => {
       dispatch(dealDeck(trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand));
+    },
+
+    trailClick: (id, supplyHand, activeTrail) => {
+      dispatch(trailClick(id, supplyHand, activeTrail));
     }
   };
 };

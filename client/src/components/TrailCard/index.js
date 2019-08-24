@@ -14,3 +14,4 @@ const TrailCard = props => (
 );
 
 export default TrailCard;
+

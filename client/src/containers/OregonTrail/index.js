@@ -6,6 +6,7 @@ import calamityDeck from "../../decks/calamity_deck";
 import "./style.css";
 
 const behindtrail = [miscCards[2], miscCards[2], miscCards[2], miscCards[2], miscCards[2]];
+const activeCalamity = [miscCards[4]];
 
 const Start = props => (
     <div
@@ -75,6 +76,7 @@ class OregonTrail extends Component {
                                 image={miscCards[5].image}
                             />
                         </Col>
+                        
                         <Col size="med-1 sm-1">
                             <Decks
                                 key={miscCards[3].id}
@@ -82,6 +84,7 @@ class OregonTrail extends Component {
                                 image={miscCards[3].image}
                             />
                         </Col>
+
                         <Col size="med-6 sm-7">
                             <Start
                                 key={miscCards[0].id}
@@ -91,6 +94,7 @@ class OregonTrail extends Component {
                         </Col>
                         
                     </Row>
+
                     <Row >
                         {behindtrail.map(trail => (
                             <Col size="md-2 sm-6">
@@ -102,6 +106,7 @@ class OregonTrail extends Component {
                             </Col>
                         ))}
                     </Row>
+
                     <Row>
                     <Col size="med-1 sm-1">
                             <Decks
@@ -110,13 +115,17 @@ class OregonTrail extends Component {
                                 image={miscCards[4].image}
                             />
                         </Col>
+
+                        {activeCalamity.map(calamity => (
                         <Col size="med-1 sm-2">
                             <ActiveCalamity
-                                key={calamityDeck[4].id}
-                                value={calamityDeck[4].id}
-                                image={calamityDeck[4].image}
+                                key={calamity.id}
+                                value={calamity.id}
+                                image={calamity.image}
                             />
                         </Col>
+                        ))}
+                        
                         <Col size="med-12 sm-7">
                             <End
                                 key={miscCards[1].id}
