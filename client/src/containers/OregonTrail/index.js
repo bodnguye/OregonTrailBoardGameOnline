@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { connect } from "react-redux";
+
+import { dealDeck } from "../../actions/deckActions";
+
 import miscCards from "../../decks/misc_cards";
 import calamityDeck from "../../decks/calamity_deck";
 import "./style.css";
 
-const behindtrail = [miscCards[2], miscCards[2], miscCards[2], miscCards[2], miscCards[2]];
 const activeCalamity = [miscCards[4]];
 
 const Start = props => (
@@ -96,12 +98,12 @@ class OregonTrail extends Component {
                     </Row>
 
                     <Row >
-                        {behindtrail.map(trail => (
+                        {this.props.deck.activeTrail.map(trail => (
                             <Col size="md-2 sm-6">
                                 <Trails
                                     key={trail.id}
                                     value={trail.id}
-                                    image={trail.image}
+                                    image={trail.active}
                                 />
                             </Col>
                         ))}
@@ -149,7 +151,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-
+     
     };
 };
 

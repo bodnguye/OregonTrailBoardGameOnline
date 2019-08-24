@@ -1,39 +1,35 @@
-export const dealDeck = (trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand) => {
+import miscCards from "../decks/misc_cards"
+ const initialActive= [miscCards[2],miscCards[2],miscCards[2],miscCards[2],miscCards[2]];
 
-    const newTrailDeck = trailDeck;
-    const newSupplyDeck = supplyDeck;
-    const newCalamityDeck = calamityDeck;
-    const newTrailHand = trailHand;
-    const newSupplyHand = supplyHand;
-    const newMiscCards = miscCards;
+export const dealDeck = (trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand) => {
     
-    while (newTrailHand.length < 5) {
+    while (trailHand.length < 5) {
       // Deal 5 Trail cards to Player Hand
       // Removes 5 Trail cards from top of the Deck
-      newTrailHand.push(newTrailDeck.shift());
+      trailHand.push(trailDeck.shift());
       }
 
-      console.log(newTrailDeck);
-      console.log(newTrailHand);
+      console.log(trailDeck);
+      console.log(trailHand);
 
-    while (newSupplyHand.length < 8) {
+    while (supplyHand.length < 8) {
       // Deal 8 Supply cards to Player Hand
       // Removes 8 Supply cards from top of the Deck
-      newSupplyHand.push(newSupplyDeck.shift());
+      supplyHand.push(supplyDeck.shift());
       }
 
-    console.log(newSupplyDeck);
-    console.log(newSupplyHand);
+    console.log(supplyDeck);
+    console.log(supplyHand);
 
     // update the state variables accordingly
     return{
         type: "DEAL_DECK",
-        trailDeck: newTrailDeck,
-        trailHand : newTrailHand,
-        supplyDeck: newSupplyDeck,
-        supplyHand : newSupplyHand,
-        calamityDeck: newCalamityDeck,
-        miscCards: newMiscCards
+        trailDeck: trailDeck,
+        trailHand : trailHand,
+        supplyDeck: supplyDeck,
+        supplyHand : supplyHand,
+        calamityDeck: calamityDeck,
+        miscCards: miscCards,
     }
   };  
 
@@ -48,14 +44,15 @@ export const trailClick = (id, trailHand, activeTrail) => {
   
   // Create an array with the clicked TrailCard
     if (!activeTrail.length) {
-      activeTrail.push(pickedCard);
-     console.log(activeTrail);
+      initialActive.shift();
+      initialActive.push(pickedCard[0]);
+     console.log(initialActive);
 
      // update the state variables accordingly
     return{
       type: "TRAIL_CLICK",
       trailHand : newTrailHand,
-      activeTrail: activeTrail
+      activeTrail: initialActive
     }
     }
   };

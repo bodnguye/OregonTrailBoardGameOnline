@@ -22,8 +22,9 @@ const trailHand = [];
 const supplyHand = [];
 const activeTrail = [];
 
+
 class PlayerHand extends Component {
-  
+
   render() {
     return (
       <Container>

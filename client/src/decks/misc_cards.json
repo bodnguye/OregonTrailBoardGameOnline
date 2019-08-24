@@ -11,7 +11,7 @@
     },
     {
       "id": 3,
-      "image": "./oregon_cards/misc_cards/trail_card.png",
+      "active": "./oregon_cards/misc_cards/trail_card.png",
       "clicked": false
     },
     {
