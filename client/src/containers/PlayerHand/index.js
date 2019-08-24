@@ -29,7 +29,7 @@ class PlayerHand extends Component {
   render() {
     return (
       <Container>
-        <button onClick={() => this.props.dealDeck(trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand)}>Start Game</button>
+        <button onClick={() => this.props.dealDeck(trailDeck, supplyDeck, calamityDeck, miscCards, trailHand, supplyHand)}>Start Trail</button>
         <div className="hand">
           <Row>
             {this.props.deck.trailHand.map(trailCard => (

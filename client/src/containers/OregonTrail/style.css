@@ -1,24 +1,23 @@
-  /**********************/
- /* start and end card */
-/**********************/
+  /**************/
+ /* start card */
+/**************/
 
-.startend-card {
+.start-card {
   border: 4px /*rgb(99, 99, 99)*/ solid;
   border-radius: 2px;
-  width: 17%;
+  width: 30%;
   height: 140px;
   /* margin: 1rem; */
   position: relative;
-  /* float: right; */
-  box-shadow: 4px 4px 10px rgb(3, 141, 15);
+  /* float: left; */
+  box-shadow: 4px 4px 10px rgba(255, 238, 1, 0.473);
   transition: all .2s ease-in-out;
   display: block;
-  margin-left: auto;
+  margin-left: 41.7%;
   margin-right: auto;
-  /* width: 40%; */
 }
 
-.startend-card > .startend-img-container {
+.start-card > .start-img-container {
   height: 100%;
   overflow: hidden;
   background:#ffffff;
@@ -30,7 +29,42 @@
     cursor: pointer;
   } */
 
-.startend-card > .startend-img-container > img {
+.start-card > .start-img-container > img {
+  height: 100%;
+}
+
+ /*************/
+ /* end card */
+/************/
+
+.end-card {
+  border: 4px /*rgb(99, 99, 99)*/ solid;
+  border-radius: 2px;
+  width: 30%;
+  height: 140px;
+  /* margin: 1rem; */
+  position: relative;
+  /* float: left; */
+  box-shadow: 4px 4px 10px rgba(255, 238, 1, 0.473);
+  transition: all .2s ease-in-out;
+  display: block;
+  margin-left: 26.7%;
+  margin-right: auto;
+}
+
+.end-card > .end-img-container {
+  height: 100%;
+  overflow: hidden;
+  background:#ffffff;
+}
+
+/* .startend-card:hover {
+    box-shadow: 8px 8px 20px rgb(55, 255, 5);
+    transform: scale(1.4);
+    cursor: pointer;
+  } */
+
+.end-card > .end-img-container > img {
   height: 100%;
 }
 
@@ -68,6 +102,84 @@
   }
   
   .trail-card:active {
+    transform: translate(1px, 1px);
+  }
+
+  /*************/
+ /* deck card */
+/*************/
+
+.deck-card:active {
+  transform: translate(1px, 1px);
+}
+
+.deck-card {
+    border: 4px /*rgb(99, 99, 99)*/ solid;
+    border-radius: 2px;
+    width: 71px;
+    height: 100px;
+    margin: 1rem;
+    position: relative;
+    float: left;
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
+    transition: all .2s ease-in-out;
+    display: block;
+    margin-left: 50%;
+    margin-right: 50%; 
+  }
+  
+  .deck-card > .deck-img-container {
+    height: 100%;
+    background:#ffffff;
+  }
+  
+  .deck-card > .deck-img-container > img {
+    height: 100%;
+  }
+  
+  .deck-card:active {
+    transform: translate(1px, 1px);
+  }
+
+  /************************/
+ /* active calamity card */
+/************************/
+
+.activecalamity-card:active {
+  transform: translate(1px, 1px);
+}
+
+.activecalamity-card {
+    border: 4px /*rgb(99, 99, 99)*/ solid;
+    border-radius: 2px;
+    width: 71px;
+    height: 100px;
+    margin: 1rem;
+    position: relative;
+    float: left;
+    box-shadow: 4px 4px 10px rgb(134, 27, 27);
+    transition: all .2s ease-in-out;
+    display: block;
+    margin-left: 20.5%;
+    margin-right: 50%; 
+  }
+
+  .activecalamity-card > .activecalamity-img-container {
+    height: 100%;
+    background:#ffffff;
+  }
+
+  .activecalamity-card:hover {
+    box-shadow: 8px 8px 20px rgb(255, 0, 0);
+    transform: scale(2.5);
+    cursor: pointer;
+  }
+  
+  .activecalamity-card > .activecalamity-img-container > img {
+    height: 100%;
+  }
+  
+  .activecalamity-card:active {
     transform: translate(1px, 1px);
   }
 

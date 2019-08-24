@@ -2,16 +2,28 @@ import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import { connect } from "react-redux";
 import miscCards from "../../decks/misc_cards";
+import calamityDeck from "../../decks/calamity_deck";
 import "./style.css";
 
 const behindtrail = [miscCards[2], miscCards[2], miscCards[2], miscCards[2], miscCards[2]];
 
-const StartEnd = props => (
+const Start = props => (
     <div
-        className="startend-card"
+        className="start-card"
         value={props.id}
     >
-        <div className="startend-img-container">
+        <div className="start-img-container">
+            <img alt={props.name} src={props.image} />
+        </div>
+    </div>
+)
+
+const End = props => (
+    <div
+        className="end-card"
+        value={props.id}
+    >
+        <div className="end-img-container">
             <img alt={props.name} src={props.image} />
         </div>
     </div>
@@ -28,34 +40,85 @@ const Trails = props => (
     </div>
 )
 
+const Decks = props => (
+    <div
+        className="deck-card"
+        value={props.id}
+    >
+        <div className="deck-img-container">
+            <img alt={props.name} src={props.image} />
+        </div>
+    </div>
+)
+
+const ActiveCalamity = props => (
+    <div
+        className="activecalamity-card"
+        value={props.id}
+    >
+        <div className="activecalamity-img-container">
+            <img alt={props.name} src={props.image} />
+        </div>
+    </div>
+)
+
 class OregonTrail extends Component {
     render() {
         return (
             <div className="oregontrail">
                 <Container>
                     <Row >
-                        <Col size="med-12 sm-12">
-                            <StartEnd
+                    <Col size="med-1 sm-1">
+                            <Decks
+                                key={miscCards[5].id}
+                                value={miscCards[5].id}
+                                image={miscCards[5].image}
+                            />
+                        </Col>
+                        <Col size="med-1 sm-1">
+                            <Decks
+                                key={miscCards[3].id}
+                                value={miscCards[3].id}
+                                image={miscCards[3].image}
+                            />
+                        </Col>
+                        <Col size="med-6 sm-7">
+                            <Start
                                 key={miscCards[0].id}
                                 value={miscCards[0].id}
                                 image={miscCards[0].image}
                             />
                         </Col>
+                        
                     </Row>
                     <Row >
                         {behindtrail.map(trail => (
                             <Col size="md-2 sm-6">
                                 <Trails
                                     key={trail.id}
-                                    id={trail.id}
+                                    value={trail.id}
                                     image={trail.image}
                                 />
                             </Col>
                         ))}
                     </Row>
                     <Row>
-                        <Col size="med-12 sm-12">
-                            <StartEnd
+                    <Col size="med-1 sm-1">
+                            <Decks
+                                key={miscCards[4].id}
+                                value={miscCards[4].id}
+                                image={miscCards[4].image}
+                            />
+                        </Col>
+                        <Col size="med-1 sm-2">
+                            <ActiveCalamity
+                                key={calamityDeck[4].id}
+                                value={calamityDeck[4].id}
+                                image={calamityDeck[4].image}
+                            />
+                        </Col>
+                        <Col size="med-12 sm-7">
+                            <End
                                 key={miscCards[1].id}
                                 value={miscCards[1].id}
                                 image={miscCards[1].image}
