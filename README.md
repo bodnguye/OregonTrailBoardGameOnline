@@ -25,12 +25,12 @@ Currently the game is in its pre-Alpha and many of the features from the board g
 The plan to make this board game into a reality started off by playing the actual, physical board game. By playing, it gave me the a better understanding on the game logic and how the game works. I made a flow chart that would help visualize the logic and how each turn can play out. 
 
 **Wire Frame**
-![Results](/client/client/public/images/wireframe.jpg)
+![Results](/client/public/images/wireframe.jpg)
 
 **Game Set Up**
-![Results](/client/client/public/images/setup.png)
+![Results](/client/public/images/setup.png)
 
 **Game Start** 
-![Results](/client/client/public/images/gamebegins.png)
+![Results](/client/public/images/gamebegins.png)
 
 
