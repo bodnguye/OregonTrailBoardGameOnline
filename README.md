@@ -11,6 +11,8 @@ A MERN app based off The Oregon Trails card game that is based on the video game
 ## How to play
 If you are unfamiliar with the rules, here are [instructions](http://www.geekyhobbies.com/the-oregon-trail-card-game-review-and-rules/) on how to play.
 
+[Click here to play!](https://blooming-spire-65020.herokuapp.com/)
+
 ## Technologies
 - MongoDB
 - Express.js
@@ -25,12 +27,17 @@ Currently the game is in its pre-Alpha and many of the features from the board g
 The plan to make this board game into a reality started off by playing the actual, physical board game. By playing, it gave me the a better understanding on the game logic and how the game works. I made a flow chart that would help visualize the logic and how each turn can play out. 
 
 **Wire Frame**
+This is the basic layout how the game would look like. 
 ![Results](/client/public/images/wireframe.jpg)
 
+
 **Game Set Up**
+Once at least 2 players has enter, the game can begin. Each player would receive 5 Trail cards and 8 supply cards.
 ![Results](/client/public/images/setup.png)
 
+
 **Game Start** 
+This is the game logic of the game.
 ![Results](/client/public/images/gamebegins.png)
 
 
