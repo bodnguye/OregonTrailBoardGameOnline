@@ -1,29 +1,9 @@
-# Create React Express App
+# Oregon Trail Board Game Online
 
-## About This Boilerplate
+## Introduction 
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+A MERN app based off The Oregon Trails card game that is based on the video game of the same name. The idea to recreate this board game came from playing when I was camping with some friends from college. We had so much fun playing this simple board game because it remind us about the time when we played the computer games when we were all kids in elemetary school. Unforutnately, after college we all moved to different cities and are too far away from each other to have a game night ever so often. The purpose of this project was so I may be able to play with my friends from any where they are and keep connected with the fun that these games have brought us. 
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+## How to play
+If you are unfamiliar with the rules, here is [instructions](http://www.geekyhobbies.com/the-oregon-trail-card-game-review-and-rules/) on how to play.
 
-## Starting the app locally
-
-Start by installing front and backend dependencies. While in this directory, run the following command:
-
-```
-npm install
-```
-
-This should install node modules within the server and the client folder.
-
-After both installations complete, run the following command in your terminal:
-
-```
-npm start
-```
-
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
